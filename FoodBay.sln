@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodBayUI", "FoodBay\FoodBayUI.csproj", "{00CB83DA-375A-407B-BA39-B4CA6162DCB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodBayBLL", "FoodBayBLL\FoodBayBLL.csproj", "{16A69D9D-A474-4FCD-A10B-C2B01B1A9A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodBayDAL", "FoodBayDAL\FoodBayDAL.csproj", "{8EF52780-BA95-4C62-B69B-3E5C03F37892}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00CB83DA-375A-407B-BA39-B4CA6162DCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CB83DA-375A-407B-BA39-B4CA6162DCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CB83DA-375A-407B-BA39-B4CA6162DCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CB83DA-375A-407B-BA39-B4CA6162DCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A69D9D-A474-4FCD-A10B-C2B01B1A9A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A69D9D-A474-4FCD-A10B-C2B01B1A9A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A69D9D-A474-4FCD-A10B-C2B01B1A9A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A69D9D-A474-4FCD-A10B-C2B01B1A9A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF52780-BA95-4C62-B69B-3E5C03F37892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF52780-BA95-4C62-B69B-3E5C03F37892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF52780-BA95-4C62-B69B-3E5C03F37892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF52780-BA95-4C62-B69B-3E5C03F37892}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

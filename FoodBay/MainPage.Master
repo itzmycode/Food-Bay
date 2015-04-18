@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="FoodBay.MainPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="CSS/Main.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.11.2.js"></script>
+    <title>Food Bay</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainForm" runat="server">
+        <div id="wrapper">
+            <div id="header">
+                <div class="dLogo">
+                </div>
+                <div class="dWelcomeNote">
+                    Welcome: &nbsp;
+                    <asp:Label ID="lblWelcome" runat="server" Text="Raja Mohamed J"></asp:Label>
+                </div>
+<%--                <div id="dMenu">
+                    <ul>
+                        <li class="home"><a href="#" class="active" runat="server" id="aHome">Home</a></li>
+                        <li class="tutorials"><a href="#" runat="server" id="aOrder">Order Food</a></li>
+                        <li class="about"><a href="#" runat="server" id="aPastOrder">Past Orders</a></li>
+                    </ul>
+                </div>--%>
+            </div>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <div id="footer">
+                <p>This is footer </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

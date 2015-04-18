@@ -1,0 +1,4 @@
+D:\Raja Mohamed\FoodBay\FoodBayDAL\bin\Debug\FoodBayDAL.dll
+D:\Raja Mohamed\FoodBay\FoodBayDAL\bin\Debug\FoodBayDAL.pdb
+D:\Raja Mohamed\FoodBay\FoodBayDAL\obj\Debug\FoodBayDAL.dll
+D:\Raja Mohamed\FoodBay\FoodBayDAL\obj\Debug\FoodBayDAL.pdb

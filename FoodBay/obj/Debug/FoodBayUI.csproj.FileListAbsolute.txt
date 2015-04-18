@@ -1,0 +1,7 @@
+D:\Raja Mohamed\FoodBay\FoodBay\bin\FoodBay.dll
+D:\Raja Mohamed\FoodBay\FoodBay\bin\FoodBay.pdb
+D:\Raja Mohamed\FoodBay\FoodBay\obj\Debug\FoodBay.dll
+D:\Raja Mohamed\FoodBay\FoodBay\obj\Debug\FoodBay.pdb
+D:\Raja Mohamed\FoodBay\FoodBay\bin\FoodBayBLL.dll
+D:\Raja Mohamed\FoodBay\FoodBay\bin\FoodBayBLL.pdb
+D:\Raja Mohamed\FoodBay\FoodBay\obj\Debug\FoodBayUI.csprojResolveAssemblyReference.cache

@@ -1,0 +1,50 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    float: left;
+    margin-right: auto;
+    margin-left: 150px;
+    width: 1000px;
+    border: 5px solid #808080;
+    background: #E0E0E0;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: #00B0FF;
+    color: #FFF;
+    font-weight: bold;
+}
+
+    #header p {
+        padding-left: 10px;
+    }
+
+.dLogo {
+    float: left;
+}
+
+.dWelcomeNote {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+#content {
+    float: left;
+    width: 100%;
+    height: 650px;
+}
+
+#footer {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 75px;
+}
+
