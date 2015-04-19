@@ -11,7 +11,7 @@ namespace FoodBay
 {
 
 
-    public partial class WebForm1
+    public partial class HomePage
     {
     }
 }

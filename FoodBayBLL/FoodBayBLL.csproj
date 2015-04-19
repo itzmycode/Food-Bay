@@ -43,6 +43,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{29f32c3c-dbf6-422f-9a0d-dbc58eaa0fb6}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FoodBayDAL\FoodBayDAL.csproj">
       <Project>{8ef52780-ba95-4c62-b69b-3e5c03f37892}</Project>
       <Name>FoodBayDAL</Name>

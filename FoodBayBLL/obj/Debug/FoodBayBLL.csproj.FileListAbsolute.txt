@@ -5,3 +5,12 @@ D:\Raja Mohamed\FoodBay\FoodBayBLL\obj\Debug\FoodBayBLL.dll
 D:\Raja Mohamed\FoodBay\FoodBayBLL\obj\Debug\FoodBayBLL.pdb
 D:\Raja Mohamed\FoodBay\FoodBayBLL\bin\Debug\FoodBayDAL.dll
 D:\Raja Mohamed\FoodBay\FoodBayBLL\bin\Debug\FoodBayDAL.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\bin\Debug\FoodBayBLL.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\bin\Debug\FoodBayBLL.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\bin\Debug\FoodBayDAL.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\bin\Debug\FoodBayDAL.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\obj\Debug\FoodBayBLL.csprojResolveAssemblyReference.cache
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\obj\Debug\FoodBayBLL.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\obj\Debug\FoodBayBLL.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\bin\Debug\BusinessEntities.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBayBLL\bin\Debug\BusinessEntities.pdb

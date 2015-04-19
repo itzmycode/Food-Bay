@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="CSS/Main.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.11.2.js"></script>
     <title>Food Bay</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -11,31 +12,50 @@
 </head>
 <body>
     <form id="mainForm" runat="server">
-        <div id="wrapper">
-            <div id="header">
-                <div class="dLogo">
-                </div>
-                <div class="dWelcomeNote">
-                    Welcome: &nbsp;
-                    <asp:Label ID="lblWelcome" runat="server" Text="Raja Mohamed J"></asp:Label>
-                </div>
-<%--                <div id="dMenu">
-                    <ul>
-                        <li class="home"><a href="#" class="active" runat="server" id="aHome">Home</a></li>
-                        <li class="tutorials"><a href="#" runat="server" id="aOrder">Order Food</a></li>
-                        <li class="about"><a href="#" runat="server" id="aPastOrder">Past Orders</a></li>
-                    </ul>
-                </div>--%>
-            </div>
-            <div id="content">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
+        <div class="container">
+            <div class="main">
+                <!--header-->
+                <div class="header">
+                    <div class="logo">
+                        <a href="#" class="go">Food Bay</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="header-top">
+                        <div class="search">
+                            <asp:TextBox ID="txtSearch" runat="server" Text="Search"></asp:TextBox>
+                            <asp:Button ID="btnSearch" runat="server" Text="" />
+                        </div>
+                        <div class="top-nav">
+                            <ul>
+                                <li id="aHome" runat="server"><a href="HomePage.aspx">Home</a></li>
+                                <li id="aOrderFood" runat="server"><a href="OrderFood.aspx">Order Food</a></li>
+                                <li id="aPastOrders" runat="server"><a href="OrderHistory.aspx">Past Orders</a></li>
+                                <li id="aProfile" runat="server"><a href="AssociateProfile.aspx">My Profile</a></li>
+                            </ul>
 
-            </div>
-            <div id="footer">
-                <p>This is footer </p>
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--top-->
+                <div class="content-top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="footer-class">© 2015 Food Bay - Powered By Cognizant </p>
             </div>
         </div>
     </form>
+    <script type="text/javascript">
+        $("#txtSearch").focus(function () {
+            this.value = '';
+        });
+
+        $("#txtSearch").blur(function () {
+            this.value = 'Search';
+        });
+    </script>
 </body>
 </html>

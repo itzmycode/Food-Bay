@@ -57,12 +57,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CSS\Main.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Images\back1.jpg" />
+    <Content Include="Images\img-sprite.png" />
     <Content Include="Scripts\jquery-1.11.2.js" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />
+    <Content Include="OrderFood.aspx" />
+    <Content Include="OrderHistory.aspx" />
+    <Content Include="AssociateProfile.aspx" />
+    <Content Include="OrderFood_Main.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Generic.cs" />
     <Compile Include="MainPage.Master.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,6 +86,34 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OrderFood.aspx.cs">
+      <DependentUpon>OrderFood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderFood.aspx.designer.cs">
+      <DependentUpon>OrderFood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssociateProfile.aspx.cs">
+      <DependentUpon>AssociateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssociateProfile.aspx.designer.cs">
+      <DependentUpon>AssociateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderFood_Main.aspx.cs">
+      <DependentUpon>OrderFood_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderFood_Main.aspx.designer.cs">
+      <DependentUpon>OrderFood_Main.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainPage.Master" />
@@ -90,6 +126,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{29f32c3c-dbf6-422f-9a0d-dbc58eaa0fb6}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FoodBayBLL\FoodBayBLL.csproj">
       <Project>{16a69d9d-a474-4fcd-a10b-c2b01b1a9a0a}</Project>
       <Name>FoodBayBLL</Name>
