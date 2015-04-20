@@ -31,6 +31,24 @@ namespace FoodBay {
         protected global::System.Web.UI.HtmlControls.HtmlForm mainForm;
         
         /// <summary>
+        /// smMain control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager smMain;
+        
+        /// <summary>
+        /// upMain control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upMain;
+        
+        /// <summary>
         /// txtSearch control.
         /// </summary>
         /// <remarks>

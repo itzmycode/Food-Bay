@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -46,11 +47,22 @@ namespace FoodBay
 
         private void BindVendor()
         {
-
-            ddlVendor.DataSource = objFoodBLL.GetVendorDetails(Convert.ToInt32(ddlLocation.SelectedValue));
-            ddlVendor.DataTextField = "VendorName";
-            ddlVendor.DataValueField = "VendorId";
-            ddlVendor.DataBind();
+            List<Vendors> lstVendors = new List<Vendors>();
+            lstVendors = objFoodBLL.GetVendorDetails(Convert.ToInt32(ddlLocation.SelectedValue));
+            if (lstVendors != null && lstVendors.Count > 0)
+            {
+                ddlVendor.DataSource = lstVendors;
+                ddlVendor.DataTextField = "VendorName";
+                ddlVendor.DataValueField = "VendorId";
+                ddlVendor.DataBind();
+            }
+            else
+            {
+                ddlVendor.ClearSelection();
+                ddlVendor.Items.Clear();
+                ddlVendor.Items.Add("-- Pick One --");
+                ddlVendor.DataBind();
+            }
         }
 
         protected void ddlLocation_SelectedIndexChanged(object sender, EventArgs e)

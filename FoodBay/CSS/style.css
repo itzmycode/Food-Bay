@@ -890,7 +890,7 @@ p.footer-class {
 }
 
 .selectbox {
-    width: 98%;
+    width: 250px;
     height: 27px;
     background-color: #FFF;
     font: 400 12px/18px 'Open Sans', sans-serif;
@@ -902,7 +902,7 @@ p.footer-class {
 }
 
 .textbox {
-    width: 98%;
+    width: 250px;
     height: 27px;
     background-color: #FFF;
     font: 400 12px/18px 'Open Sans', sans-serif;
@@ -912,3 +912,54 @@ p.footer-class {
     margin: 5px 0 0 0;
     padding: 5px;
 }
+
+.tblOrderPage, .tblVendor {
+    margin: 1em;
+}
+
+    .tblOrderPage label, .tblVendor label {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-size: 100%;
+        padding-top: .1em;
+        padding-right: 5em;
+        width: auto;
+        text-align: right;
+        float: left;
+    }
+
+.dVendorSelection, .dVendorDetails {
+    float: left;
+}
+
+.dItemDetails {
+    clear: both;
+    border: 1px solid green;
+    width: 100%;
+}
+
+.dPayment {
+    margin: 0 1em 0 1em;
+    float: right;
+}
+
+.buttons {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    padding: 12px 24px;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    transition: background-color .3s;
+    font-weight: bold;
+}
+
+    .buttons:hover, .buttons:focus {
+        background-color: #27ae60;
+    }
