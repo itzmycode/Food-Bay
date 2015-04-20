@@ -10,14 +10,15 @@
                 <td>City: 
                 </td>
                 <td>
-                    <asp:TextBox ID="txtCity" runat="server" Enabled="false" Text="AA   "></asp:TextBox>
+                    <asp:TextBox ID="txtCity" runat="server" Enabled="false" CssClass="textbox"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Chooose Location: 
                 </td>
                 <td>
-                    <asp:DropDownList ID="ddlLocation" runat="server">
+                    <asp:DropDownList ID="ddlLocation" runat="server" AppendDataBoundItems="true" OnSelectedIndexChanged="ddlLocation_SelectedIndexChanged" AutoPostBack="true" CssClass="selectbox">
+                        <asp:ListItem>-- Pick One --</asp:ListItem>
                     </asp:DropDownList>
 
                 </td>
@@ -26,7 +27,8 @@
                 <td>Choose Vendor
                 </td>
                 <td>
-                    <asp:DropDownList ID="ddlVendor" runat="server">
+                    <asp:DropDownList ID="ddlVendor" runat="server" CssClass="selectbox" AppendDataBoundItems="true">
+                        <asp:ListItem>-- Pick One --</asp:ListItem>
                     </asp:DropDownList>
 
                 </td>

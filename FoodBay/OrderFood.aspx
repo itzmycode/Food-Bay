@@ -6,14 +6,14 @@
     <asp:Repeater ID="repeaterOrderFood" runat="server">
         <ItemTemplate>
             <div class="box box1 ">
-                <a href="OrderFood_Main.aspx?cityName=<%#Eval("CityName") %>">
+                <a href="OrderFood_Main.aspx?cityName=<%#Eval("CityName") %>&cityId=<%#Eval("CityId") %>">
                     <h2><%#Eval("CityName") %></h2>
                 </a>
             </div>
         </ItemTemplate>
         <AlternatingItemTemplate>
             <div class="box box3">
-                 <a href="OrderFood_Main.aspx?cityName=<%#Eval("CityName") %>">
+                 <a href="OrderFood_Main.aspx?cityName=<%#Eval("CityName") %>&cityId=<%#Eval("CityId") %>">
                     <h2><%#Eval("CityName") %></h2>
                 </a>
             </div>

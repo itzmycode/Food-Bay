@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    public class City
+    public class Vendors
     {
-        public int CityId
+        public int VendorId
         {
             get;
             set;
         }
 
-        public string CityName
+        public string VendorName
         {
             get;
             set;

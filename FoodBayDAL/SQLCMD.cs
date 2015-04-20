@@ -8,6 +8,8 @@ namespace FoodBayBLL
 {
     public static class SQLCMD
     {
-        public static string SELECT_CITY = "SELECT CityName from MST_CITY ORDER BY CityName";
+        public static string SELECT_CITY = "SELECT CityId,CityName from MST_CITY ORDER BY CityName";
+        public static string SELECT_LOCATION = "SELECT LocationId,LocationName from MST_Location where CityId = {0}";
+        public static string SELECT_VENDOR = "SELECT VendorId,VendorName from MST_Vendor where LocationId = {0}";
     }
 }

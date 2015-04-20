@@ -880,11 +880,35 @@ p.footer-class {
 
 
 .orderPage_Container {
-    float:left;
+    float: left;
     padding: 0;
     margin: 0 0 0 1em;
     width: 98%;
     height: 500px;
     border: 2px solid #E8EAF6;
     background: #E8EAF6;
+}
+
+.selectbox {
+    width: 98%;
+    height: 27px;
+    background-color: #FFF;
+    font: 400 12px/18px 'Open Sans', sans-serif;
+    color: #000;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    margin: 5px 0 0 0;
+    padding: 5px;
+}
+
+.textbox {
+    width: 98%;
+    height: 27px;
+    background-color: #FFF;
+    font: 400 12px/18px 'Open Sans', sans-serif;
+    color: #000;
+    font-weight: normal;
+    border: 1px solid #ccc;
+    margin: 5px 0 0 0;
+    padding: 5px;
 }
