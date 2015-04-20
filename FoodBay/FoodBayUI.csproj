@@ -60,6 +60,8 @@
     <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\back1.jpg" />
+    <Content Include="Images\FoodBay_ICON.ico" />
+    <Content Include="Images\FoodBay_Logo.png" />
     <Content Include="Images\img-sprite.png" />
     <Content Include="Scripts\jquery-1.11.2.js" />
     <Content Include="Web.config" />

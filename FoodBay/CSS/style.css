@@ -32,61 +32,19 @@ h1, h2, h3, h4, h5, h6, label, p {
 
 .logo {
     float: left;
-    margin-top: 0.8em;
 }
 
     .logo a.go {
-        float: right;
-        width: 70%;
+        width: auto;
     }
 
-.logo-top {
-    display: inline-block;
+.logoText {
     float: left;
-    position: relative;
+    padding: 4em 1em 0;
+    color: #81d4fa;
+    font-family:'Bookman Old Style';
 }
 
-ul.sub {
-    background: #fff;
-    border: 1px solid #ccc;
-    position: absolute;
-    left: 0;
-    width: 118px;
-    margin: 20px 0 0 0;
-    opacity: 0;
-    visibility: hidden;
-    top: 37px;
-    z-index: 1;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.logo-top:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-    z-index: 9999;
-}
-
-ul.sub li {
-    list-style: none;
-}
-
-    ul.sub li a {
-        display: inline-block;
-        color: #333;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 0.8em;
-        padding: 0.5em;
-    }
-
-        ul.sub li a:hover {
-            color: #039be5;
-        }
 /*--- Navigation---*/
 span.menu-at, span.menu-at-in, span.menu-at-on {
     display: block;

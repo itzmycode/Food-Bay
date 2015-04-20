@@ -5,6 +5,7 @@
 <head runat="server">
     <link href="CSS/bootstrap.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="icon" href="Images/FoodBay_ICON.ico" />
     <script src="Scripts/jquery-1.11.2.js"></script>
     <title>Food Bay</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -20,9 +21,15 @@
                         <!--header-->
                         <div class="header">
                             <div class="logo">
-                                <a href="#" class="go">Food Bay</a>
+                                <a href="#" class="go">
+                                    <img src="Images/FoodBay_Logo.png" alt="Food Bay" />
+                                </a>
                                 <div class="clearfix"></div>
                             </div>
+                            <div class="logoText">
+                                <h3>Food Bay</h3>
+                            </div>
+
                             <div class="header-top">
                                 <div class="search">
                                     <asp:TextBox ID="txtSearch" runat="server" Text="Search"></asp:TextBox>
