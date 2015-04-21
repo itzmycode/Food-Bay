@@ -12,7 +12,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="mainForm" runat="server">
+    <form id="mainForm" runat="server" defaultbutton="btnSearch">
         <asp:ScriptManager ID="smMain" runat="server"></asp:ScriptManager>
         <asp:UpdatePanel ID="upMain" runat="server">
             <ContentTemplate>
@@ -33,7 +33,7 @@
                             <div class="header-top">
                                 <div class="search">
                                     <asp:TextBox ID="txtSearch" runat="server" Text="Search"></asp:TextBox>
-                                    <asp:Button ID="btnSearch" runat="server" Text="" />
+                                    <asp:Button ID="btnSearch" runat="server" Text="" OnClick="btnSearch_Click" />
                                 </div>
                                 <div class="top-nav">
                                     <ul>

@@ -13,5 +13,11 @@ namespace FoodBay
         {
 
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string strURL = "Search.aspx?searchText=" + txtSearch.Text;
+            Response.Redirect(strURL);
+        }
     }
 }

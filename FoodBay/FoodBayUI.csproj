@@ -69,6 +69,7 @@
     <Content Include="OrderHistory.aspx" />
     <Content Include="AssociateProfile.aspx" />
     <Content Include="OrderFood_Main.aspx" />
+    <Content Include="Search.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generic.cs" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="OrderFood_Main.aspx.designer.cs">
       <DependentUpon>OrderFood_Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

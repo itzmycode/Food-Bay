@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 
 .header {
     background: #039be5;
-    padding: 2em 2em 0;
+    padding: 1em 1em 0;
     margin: 0 1em;
 }
 
@@ -100,22 +100,23 @@ span.menu-at, span.menu-at-in, span.menu-at-on {
         background: none;
         width: 90%;
         border: none;
-        font-size: 2.3em;
+        font-size: 1em;
         color: #fff;
         font-weight: 300;
     }
 
     .search input[type="submit"] {
-        border: none;
-        cursor: pointer;
+        border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    cursor: pointer;
         position: absolute;
         outline: none;
-        top: 20px;
+        top: 0px;
         right: 0px;
         background: url(../images/img-sprite.png)no-repeat -8px -13px;
         width: 30px;
-        height: 30px;
-    }
+        }
 
 .top-nav {
     padding: 2em 0 0;
