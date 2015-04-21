@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, label, p {
     float: left;
     padding: 4em 1em 0;
     color: #81d4fa;
-    font-family:'Bookman Old Style';
+    font-family: 'Bookman Old Style';
 }
 
 /*--- Navigation---*/
@@ -891,6 +891,11 @@ p.footer-class {
     float: left;
 }
 
+.dButtons {
+    float: right;
+    margin: 1em;
+}
+
 .dItemDetails {
     clear: both;
     border: 1px solid green;
@@ -921,3 +926,22 @@ p.footer-class {
     .buttons:hover, .buttons:focus {
         background-color: #27ae60;
     }
+
+.tdHeader {
+    background-color: #666;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+
+.tblVendor, .tblVendor td {
+    border: 2px groove #4db6ac;
+    text-align: center;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 30px;
+}

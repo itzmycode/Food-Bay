@@ -79,7 +79,7 @@ namespace FoodBayDAL
         /// </summary>
         /// <param name="iLocationId"></param>
         /// <returns></returns>
-        public List<Vendors> GetVendorDetails(int iLocationId)
+        public List<Vendors> GetVendorList(int iLocationId)
         {
             string strQuery = string.Format(SQLCMD.SELECT_VENDOR, iLocationId);
             List<Vendors> lstVendors = new List<Vendors>();
@@ -100,6 +100,33 @@ namespace FoodBayDAL
             }
             sqlConn.Close();
             return lstVendors;
+        }
+
+        public Vendors GetVendorDetails(int iVendorId)
+        {
+            string strQuery = string.Format(SQLCMD.SELECT_VENDOR_DETAILS, iVendorId);
+            Vendors objVendors = null;
+            sqlConn.Open();
+            using (SqlCommand sqlCmd = new SqlCommand(strQuery, sqlConn))
+            {
+                sqlCmd.CommandType = CommandType.Text;
+                using (SqlDataReader sqlReader = sqlCmd.ExecuteReader())
+                {
+                    while (sqlReader.Read())
+                    {
+                        objVendors = new Vendors();
+                        objVendors.VendorId = Convert.ToInt32(sqlReader["VendorId"]);
+                        objVendors.VendorName = sqlReader["VendorName"].ToString();
+                        objVendors.VendorPOC = sqlReader["VendorPOC"].ToString();
+                        objVendors.VendorPhoneNo = Convert.ToInt32(sqlReader["VendorPhoneNo"]);
+                        objVendors.OpenTime = sqlReader["OpenTime"].ToString();
+                        objVendors.CloseTime = sqlReader["CloseTime"].ToString();
+                        objVendors.IsWeekEndAvailable = Convert.ToBoolean(sqlReader["IsWeekEndAvailable"]);
+                    }
+                }
+            }
+            sqlConn.Close();
+            return objVendors;
         }
     }
 }

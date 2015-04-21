@@ -28,10 +28,19 @@ namespace FoodBayBLL
             return (new FoodBayDAL.FoodBayDAL()).GetLocationDetails(iCityId);
         }
 
-        public List<Vendors> GetVendorDetails(int iLocationId)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="iLocationId"></param>
+        /// <returns></returns>
+        public List<Vendors> GetVendorList(int iLocationId)
         {
-            return (new FoodBayDAL.FoodBayDAL()).GetVendorDetails(iLocationId);
+            return (new FoodBayDAL.FoodBayDAL()).GetVendorList(iLocationId);
         }
 
+        public Vendors GetVendorDetails(int iVendorId)
+        {
+            return (new FoodBayDAL.FoodBayDAL()).GetVendorDetails(iVendorId);
+        }
     }
 }

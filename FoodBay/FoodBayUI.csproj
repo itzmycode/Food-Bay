@@ -66,7 +66,6 @@
     <Content Include="Scripts\jquery-1.11.2.js" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />
-    <Content Include="OrderFood.aspx" />
     <Content Include="OrderHistory.aspx" />
     <Content Include="AssociateProfile.aspx" />
     <Content Include="OrderFood_Main.aspx" />
@@ -87,13 +86,6 @@
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrderFood.aspx.cs">
-      <DependentUpon>OrderFood.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrderFood.aspx.designer.cs">
-      <DependentUpon>OrderFood.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrderHistory.aspx.cs">
       <DependentUpon>OrderHistory.aspx</DependentUpon>

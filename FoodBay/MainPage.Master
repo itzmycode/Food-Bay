@@ -38,7 +38,7 @@
                                 <div class="top-nav">
                                     <ul>
                                         <li id="aHome" runat="server"><a href="HomePage.aspx">Home</a></li>
-                                        <li id="aOrderFood" runat="server"><a href="OrderFood.aspx">Order Food</a></li>
+                                        <li id="aOrderFood" runat="server"><a href="OrderFood_Main.aspx">Order Food</a></li>
                                         <li id="aPastOrders" runat="server"><a href="OrderHistory.aspx">Past Orders</a></li>
                                         <li id="aProfile" runat="server"><a href="AssociateProfile.aspx">My Profile</a></li>
                                     </ul>
@@ -68,6 +68,20 @@
         $("#txtSearch").blur(function () {
             this.value = 'Search';
         });
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_endRequest(function () {
+            $("#txtSearch").focus(function () {
+                this.value = '';
+            });
+
+            $("#txtSearch").blur(function () {
+                this.value = 'Search';
+            });
+        });
+
+
     </script>
+
 </body>
 </html>
