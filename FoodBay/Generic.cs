@@ -18,6 +18,7 @@ namespace FoodBay
                 HtmlGenericControl aOrderFood = ((System.Web.UI.Page)pageHandler).Master.FindControl("aOrderFood") as HtmlGenericControl;
                 HtmlGenericControl aPastOrders = ((System.Web.UI.Page)pageHandler).Master.FindControl("aPastOrders") as HtmlGenericControl;
                 HtmlGenericControl aProfile = ((System.Web.UI.Page)pageHandler).Master.FindControl("aProfile") as HtmlGenericControl;
+                HtmlGenericControl aAdmin = ((System.Web.UI.Page)pageHandler).Master.FindControl("aAdmin") as HtmlGenericControl;
 
                 switch (iMenuId)
                 {
@@ -44,6 +45,13 @@ namespace FoodBay
                         aOrderFood.Attributes.Add("class", "");
                         aPastOrders.Attributes.Add("class", "");
                         aProfile.Attributes.Add("class", "active");
+                        break;
+                    case 5:
+                        aHome.Attributes.Add("class", "");
+                        aOrderFood.Attributes.Add("class", "");
+                        aPastOrders.Attributes.Add("class", "");
+                        aProfile.Attributes.Add("class", "");
+                        aAdmin.Attributes.Add("class", "active");
                         break;
                 }
             }

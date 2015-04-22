@@ -41,6 +41,7 @@
                                         <li id="aOrderFood" runat="server"><a href="OrderFood_Main.aspx">Order Food</a></li>
                                         <li id="aPastOrders" runat="server"><a href="OrderHistory.aspx">Past Orders</a></li>
                                         <li id="aProfile" runat="server"><a href="AssociateProfile.aspx">My Profile</a></li>
+                                        <li id="aAdmin" runat="server"><a href="AdminLogin.aspx">Admin</a></li>
                                     </ul>
 
 

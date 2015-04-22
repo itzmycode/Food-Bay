@@ -57,11 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminUI\CognizantLocations.aspx" />
     <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\Login.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\back1.jpg" />
+    <Content Include="Images\bg.jpg" />
     <Content Include="Images\FoodBay_ICON.ico" />
     <Content Include="Images\FoodBay_Logo.png" />
+    <Content Include="Images\icons.png" />
     <Content Include="Images\img-sprite.png" />
     <Content Include="Scripts\jquery-1.11.2.js" />
     <Content Include="Web.config" />
@@ -70,8 +74,23 @@
     <Content Include="AssociateProfile.aspx" />
     <Content Include="OrderFood_Main.aspx" />
     <Content Include="Search.aspx" />
+    <Content Include="AdminLogin.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminUI\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUI\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUI\CognizantLocations.aspx.cs">
+      <DependentUpon>CognizantLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUI\CognizantLocations.aspx.designer.cs">
+      <DependentUpon>CognizantLocations.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Generic.cs" />
     <Compile Include="MainPage.Master.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
@@ -116,9 +135,17 @@
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainPage.Master" />
+    <Content Include="AdminUI\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
