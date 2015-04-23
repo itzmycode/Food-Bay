@@ -61,6 +61,8 @@
     <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Arrow_Down.png" />
     <Content Include="Images\back1.jpg" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\FoodBay_ICON.ico" />
@@ -92,6 +94,9 @@
       <DependentUpon>CognizantLocations.aspx</DependentUpon>
     </Compile>
     <Compile Include="Generic.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.Master.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

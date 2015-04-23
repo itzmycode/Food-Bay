@@ -4,6 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="orderPage_Container">
+        <div class="runningText">
+            <marquee behavior="alternate">Order once placed cannot be refunded at any circumstances.</marquee>
+        </div>
         <div class="dVendorSelection">
             <table class="tblOrderPage" border="0">
                 <tr>
@@ -102,7 +105,7 @@
             </table>
         </div>
         <div class="dButtons">
-            <asp:Button ID="btnReset" runat="server" Text="Reset" CssClass="buttons reset" OnClick="btnReset_Click"  />
+            <asp:Button ID="btnReset" runat="server" Text="Reset" CssClass="buttons reset" OnClick="btnReset_Click" />
         </div>
         <div class="dItemDetails" id="dItemDetails" runat="server" visible="false">
             Item Details Comes here

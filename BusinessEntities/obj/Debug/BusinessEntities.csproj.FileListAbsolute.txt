@@ -1,5 +1,4 @@
 D:\Raja Mohamed\Food-Bay_Source\BusinessEntities\bin\Debug\BusinessEntities.dll
 D:\Raja Mohamed\Food-Bay_Source\BusinessEntities\bin\Debug\BusinessEntities.pdb
-D:\Raja Mohamed\Food-Bay_Source\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
 D:\Raja Mohamed\Food-Bay_Source\BusinessEntities\obj\Debug\BusinessEntities.dll
 D:\Raja Mohamed\Food-Bay_Source\BusinessEntities\obj\Debug\BusinessEntities.pdb

@@ -7,12 +7,12 @@ D:\Raja Mohamed\FoodBay\FoodBay\bin\FoodBayBLL.pdb
 D:\Raja Mohamed\FoodBay\FoodBay\obj\Debug\FoodBayUI.csprojResolveAssemblyReference.cache
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBay.dll
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBay.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\BusinessEntities.dll
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBayBLL.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBayDAL.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\BusinessEntities.pdb
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBayBLL.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBayDAL.pdb
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\obj\Debug\FoodBayUI.csprojResolveAssemblyReference.cache
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\obj\Debug\FoodBay.dll
 D:\Raja Mohamed\Food-Bay_Source\FoodBay\obj\Debug\FoodBay.pdb
-D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBayDAL.dll
-D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\FoodBayDAL.pdb
-D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\BusinessEntities.dll
-D:\Raja Mohamed\Food-Bay_Source\FoodBay\bin\BusinessEntities.pdb

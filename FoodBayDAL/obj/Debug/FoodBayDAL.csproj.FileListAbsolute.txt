@@ -4,8 +4,8 @@ D:\Raja Mohamed\FoodBay\FoodBayDAL\obj\Debug\FoodBayDAL.dll
 D:\Raja Mohamed\FoodBay\FoodBayDAL\obj\Debug\FoodBayDAL.pdb
 D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\bin\Debug\FoodBayDAL.dll
 D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\bin\Debug\FoodBayDAL.pdb
+D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\bin\Debug\BusinessEntities.dll
+D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\bin\Debug\BusinessEntities.pdb
 D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\obj\Debug\FoodBayDAL.csprojResolveAssemblyReference.cache
 D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\obj\Debug\FoodBayDAL.dll
 D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\obj\Debug\FoodBayDAL.pdb
-D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\bin\Debug\BusinessEntities.dll
-D:\Raja Mohamed\Food-Bay_Source\FoodBayDAL\bin\Debug\BusinessEntities.pdb
