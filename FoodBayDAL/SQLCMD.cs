@@ -12,5 +12,6 @@ namespace FoodBayBLL
         public static string SELECT_LOCATION = "SELECT LocationId,LocationName from MST_Location where CityId = {0}";
         public static string SELECT_VENDOR = "SELECT VendorId,VendorName from MST_Vendor where LocationId = {0}";
         public static string SELECT_VENDOR_DETAILS = "SELECT VendorId,VendorName,VendorPhoneNo,VendorPOC,OpenTime,CloseTime,IsWeekendAvailable from MST_Vendor where VendorId = {0}";
+        public static string SELECT_FOOD_ITEMS = "SELECT FoodItemId,FoodItemName,FoodItemPrice,TaxPercentage from MST_FoodItems where VendorId = {0}";
     }
 }

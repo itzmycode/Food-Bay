@@ -38,9 +38,23 @@ namespace FoodBayBLL
             return (new FoodBayDAL.FoodBayDAL()).GetVendorList(iLocationId);
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="iVendorId"></param>
+        /// <returns></returns>
         public Vendors GetVendorDetails(int iVendorId)
         {
             return (new FoodBayDAL.FoodBayDAL()).GetVendorDetails(iVendorId);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="iVendorId"></param>
+        /// <returns></returns>
+        public List<FoodItems> GetFoodItemDetails(int iVendorId)
+        {
+            return (new FoodBayDAL.FoodBayDAL()).GetFoodItemDetails(iVendorId);
         }
     }
 }

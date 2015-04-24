@@ -108,7 +108,32 @@
             <asp:Button ID="btnReset" runat="server" Text="Reset" CssClass="buttons reset" OnClick="btnReset_Click" />
         </div>
         <div class="dItemDetails" id="dItemDetails" runat="server" visible="false">
-            Item Details Comes here
+            <asp:Repeater ID="rptFoodItems" runat="server">
+                <ItemTemplate>
+                    <div class="detail">
+                        <table class="tblItems">
+                            <tr>
+                                <td class="tdHeader">
+                                    <label>Food Item</label></td>
+                                <td><%# DataBinder.Eval(Container.DataItem,"FoodItemName") %></td>
+                            </tr>
+                            <tr>
+                                <td class="tdHeader">
+                                    <label>Price</label></td>
+                                <td><%# DataBinder.Eval(Container.DataItem,"FoodItemPrice") %></td>
+                            </tr>
+                            <tr>
+                                <td class="tdHeader">
+                                    <label>
+                                        Quantity</label></td>
+                                <td>
+                                    <asp:TextBox ID="txtQuantity" runat="server"></asp:TextBox></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
         <div class="dPayment" id="dPayment" runat="server" visible="false">
             <asp:Button ID="btnChoosePayment" runat="server" Text="Choose Payment" CssClass="buttons" />

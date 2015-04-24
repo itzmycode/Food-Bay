@@ -13,10 +13,12 @@ namespace FoodBay
         #region PRIVATE VARIABLES
         int iCityId = 0;
         int iLocationId = 0;
+        int iVendorId = 0;
         FoodBayBLL.FoodBayBLL objFoodBLL = new FoodBayBLL.FoodBayBLL();
         List<City> lstCities = null;
         List<Location> lstLocations = null;
         List<Vendors> lstVendors = null;
+        List<FoodItems> lstFoodItems = null;
         Vendors objVendors = null;
         #endregion
 
@@ -73,6 +75,49 @@ namespace FoodBay
                 BindEmptyFieldToDropDown(ddlLocation);
                 BindEmptyFieldToDropDown(ddlVendor);
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void ddlVendor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlVendor.SelectedIndex > 0)
+            {
+                objVendors = objFoodBLL.GetVendorDetails(Convert.ToInt32(ddlVendor.SelectedValue));
+                if (objVendors != null)
+                {
+                    iVendorId = Convert.ToInt32(ddlVendor.SelectedValue);
+                    lblVendorName.Text = objVendors.VendorName;
+                    lblVendorLocation.Text = ddlLocation.SelectedItem.Text;
+                    lblVendorPOC.Text = objVendors.VendorPOC;
+                    lblPhoneNo.Text = objVendors.VendorPhoneNo.ToString();
+                    lblOpenTime.Text = objVendors.OpenTime;
+                    lblCloseTime.Text = objVendors.CloseTime;
+                    lblWeekEnd.Text = objVendors.IsWeekEndAvailable.ToString();
+                    tblVendorDetails.Visible = dItemDetails.Visible = dPayment.Visible = true;
+                    BindFoodItems();
+                }
+            }
+            else
+                tblVendorDetails.Visible = dItemDetails.Visible = dPayment.Visible = false;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            ddlCity.ClearSelection();
+            BindEmptyFieldToDropDown(ddlLocation);
+            BindEmptyFieldToDropDown(ddlVendor);
+            tblVendorDetails.Visible = false;
+            dItemDetails.Visible = false;
+            dPayment.Visible = false;
         }
         #endregion
 
@@ -139,6 +184,13 @@ namespace FoodBay
             }
         }
 
+        private void BindFoodItems()
+        {
+            lstFoodItems = objFoodBLL.GetFoodItemDetails(iVendorId);
+            rptFoodItems.DataSource = lstFoodItems;
+            rptFoodItems.DataBind();
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -151,36 +203,5 @@ namespace FoodBay
             objDDL.DataBind();
         }
         #endregion
-
-        protected void ddlVendor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (ddlVendor.SelectedIndex > 0)
-            {
-                objVendors = objFoodBLL.GetVendorDetails(Convert.ToInt32(ddlVendor.SelectedValue));
-                if (objVendors != null)
-                {
-                    lblVendorName.Text = objVendors.VendorName;
-                    lblVendorLocation.Text = ddlLocation.SelectedItem.Text;
-                    lblVendorPOC.Text = objVendors.VendorPOC;
-                    lblPhoneNo.Text = objVendors.VendorPhoneNo.ToString();
-                    lblOpenTime.Text = objVendors.OpenTime;
-                    lblCloseTime.Text = objVendors.CloseTime;
-                    lblWeekEnd.Text = objVendors.IsWeekEndAvailable.ToString();
-                    tblVendorDetails.Visible = dItemDetails.Visible = dPayment.Visible = true;
-                }
-            }
-            else
-                tblVendorDetails.Visible = dItemDetails.Visible = dPayment.Visible = false;
-        }
-
-        protected void btnReset_Click(object sender, EventArgs e)
-        {
-            ddlCity.ClearSelection();
-            BindEmptyFieldToDropDown(ddlLocation);
-            BindEmptyFieldToDropDown(ddlVendor);
-            tblVendorDetails.Visible = false;
-            dItemDetails.Visible = false;
-            dPayment.Visible = false;
-        }
     }
 }

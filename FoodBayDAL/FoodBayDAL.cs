@@ -102,6 +102,11 @@ namespace FoodBayDAL
             return lstVendors;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="iVendorId"></param>
+        /// <returns></returns>
         public Vendors GetVendorDetails(int iVendorId)
         {
             string strQuery = string.Format(SQLCMD.SELECT_VENDOR_DETAILS, iVendorId);
@@ -127,6 +132,32 @@ namespace FoodBayDAL
             }
             sqlConn.Close();
             return objVendors;
+        }
+
+        public List<FoodItems> GetFoodItemDetails(int iVendorId)
+        {
+            string strQuery = string.Format(SQLCMD.SELECT_FOOD_ITEMS, iVendorId);
+            List<FoodItems> lstFoodItems = new List<FoodItems>();
+            sqlConn.Open();
+            using (SqlCommand sqlCmd = new SqlCommand(strQuery, sqlConn))
+            {
+                sqlCmd.CommandType = CommandType.Text;
+                using (SqlDataReader sqlReader = sqlCmd.ExecuteReader())
+                {
+                    while (sqlReader.Read())
+                    {
+                        FoodItems objFoodItems = new FoodItems();
+                        objFoodItems.FoodItemId = Convert.ToInt32(sqlReader["FoodItemId"]);
+                        objFoodItems.FoodItemName = sqlReader["FoodItemName"].ToString();
+                        objFoodItems.FoodItemPrice = Convert.ToDouble(sqlReader["FoodItemPrice"]);
+                        objFoodItems.TaxPercentage = Convert.ToDouble(sqlReader["TaxPercentage"]);
+                        lstFoodItems.Add(objFoodItems);
+                    }
+                }
+            }
+            sqlConn.Close();
+            return lstFoodItems;
+
         }
     }
 }
