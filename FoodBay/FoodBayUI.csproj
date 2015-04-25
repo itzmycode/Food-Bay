@@ -69,6 +69,8 @@
     <Content Include="Images\FoodBay_Logo.png" />
     <Content Include="Images\icons.png" />
     <Content Include="Images\img-sprite.png" />
+    <Content Include="Images\Minus.png" />
+    <Content Include="Images\Plus.png" />
     <Content Include="Scripts\jquery-1.11.2.js" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />

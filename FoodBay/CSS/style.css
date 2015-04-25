@@ -187,19 +187,20 @@ p.footer-class {
 }
 
 .dItemDetails {
-    clear: both;
+    float: left;
     width: 100%;
+    margin: 1em 1em 1em 10em;
 }
 
 .dPayment {
-    margin: 0 1em 0 1em;
     float: right;
+    width: auto;
+    margin: 30px auto;
 }
 
 .buttons {
     position: relative;
     display: block;
-    margin: 30px auto;
     padding: 12px 24px;
     overflow: hidden;
     border-width: 0;
@@ -246,9 +247,25 @@ p.footer-class {
     float: left;
     margin-bottom: 10px;
     padding: 10px;
+    border-top: 3px groove #4db6ac;
+    border-radius: 10px;
 }
 
 .tblItems, .tblItems td {
     border: 2px ridge #4db6ac;
     text-align: center;
+    width: 380px;
+    padding: 5px;
+    height: 25px;
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.qtyplus, .qtyminus {
+    margin-top: 5px;
 }
